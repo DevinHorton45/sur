@@ -2,7 +2,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     Shoot(1)
 })
 sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Projectile, function (sprite, otherSprite) {
-	
+mySprite.setStayInScreen(true)
 })
 info.onCountdownEnd(function () {
 	
