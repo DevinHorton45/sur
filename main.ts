@@ -57,7 +57,7 @@ mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
-info.setScore(100)
+info.setScore(0)
 controller.moveSprite(mySprite, 27, 27)
 for (let index = 0; index < 2000; index++) {
     mySprite2 = randint(1, 2)
