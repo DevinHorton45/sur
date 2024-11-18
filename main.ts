@@ -104,7 +104,7 @@ for (let index = 0; index < 2000; index++) {
         myenemy2.setPosition(160, randint(0, 120))
     }
     myenemy2.follow(mySprite, 30)
-    pause(300)
+    pause(200)
 }
 game.onUpdateInterval(500, function () {
 	
