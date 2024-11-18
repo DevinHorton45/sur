@@ -5,11 +5,11 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Projectile, function (sprite, oth
 mySprite.setStayInScreen(true)
 })
 info.onCountdownEnd(function () {
-    info.setLife(50)
+    info.setLife(5)
 	
 })
 function Shoot (num: number) {
-    projectile = sprites.createProjectileFromSprite(img`
+    projectile2 = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
@@ -27,7 +27,7 @@ function Shoot (num: number) {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, mySprite, 0, 0)
-    projectile.follow(myenemy2, 100)
+    projectile2.follow(myenemy2, 100)
     info.startCountdown(0.25)
     pauseUntil(() => info.countdown() == 0)
 }
@@ -36,10 +36,10 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
     sprites.destroy(sprite)
     info.changeScoreBy(1)
 })
-let projectile: Sprite = null
+let projectile2: Sprite = null
 let myenemy2: Sprite = null
 let mySprite2 = 0
-let mySprite: Sprite = null
+
 mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 

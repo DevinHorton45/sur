@@ -2,7 +2,8 @@
     "name": "Sur",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "zombie": "pub:62219-26380-03415-55427"
     },
     "files": [
         "main.blocks",
