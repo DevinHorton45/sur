@@ -109,3 +109,5 @@ for (let index = 0; index < 2000; index++) {
 game.onUpdateInterval(500, function () {
 	
 })
+
+    

@@ -2,7 +2,8 @@
     "name": "Sur",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "Untitled": "pub:30297-37150-07567-11203"
     },
     "files": [
         "main.blocks",
