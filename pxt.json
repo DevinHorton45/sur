@@ -3,7 +3,8 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "Untitled": "pub:30297-37150-07567-11203"
+        "Untitled": "pub:30297-37150-07567-11203",
+        "zombie": "pub:62219-26380-03415-55427"
     },
     "files": [
         "main.blocks",

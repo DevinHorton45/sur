@@ -5,7 +5,7 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Projectile, function (sprite, oth
 mySprite.setStayInScreen(true)
 })
 info.onCountdownEnd(function () {
-    info.setLife(50)
+    info.setLife(5)
 	
 })
 function Shoot (num: number) {
@@ -39,7 +39,7 @@ sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, oth
 let projectile: Sprite = null
 let myenemy2: Sprite = null
 let mySprite2 = 0
-let mySprite: Sprite = null
+
 mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
