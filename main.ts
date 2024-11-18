@@ -27,7 +27,7 @@ function Shoot (num: number) {
         . . . . . . . . . . . . . . . . 
         `, mySprite, 0, 0)
     projectile.follow(myenemy2, 100)
-    info.startCountdown(0.5)
+    info.startCountdown(0.25)
     pauseUntil(() => info.countdown() == 0)
 }
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
@@ -58,7 +58,7 @@ mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
 info.setScore(0)
-controller.moveSprite(mySprite, 27, 27)
+controller.moveSprite(mySprite, 45, 45)
 for (let index = 0; index < 2000; index++) {
     mySprite2 = randint(1, 2)
     if (mySprite2 == 1) {
@@ -103,7 +103,7 @@ for (let index = 0; index < 2000; index++) {
         myenemy2.setPosition(160, randint(0, 120))
     }
     myenemy2.follow(mySprite, 30)
-    pause(200)
+    pause(300)
 }
 game.onUpdateInterval(500, function () {
 	
