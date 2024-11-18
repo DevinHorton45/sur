@@ -2,8 +2,7 @@
     "name": "Sur",
     "description": "",
     "dependencies": {
-        "device": "*",
-        "survivo extension": "pub:59232-34034-45780-71777"
+        "device": "*"
     },
     "files": [
         "main.blocks",

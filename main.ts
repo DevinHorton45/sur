@@ -5,6 +5,7 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Projectile, function (sprite, oth
 mySprite.setStayInScreen(true)
 })
 info.onCountdownEnd(function () {
+    info.setLife(50)
 	
 })
 function Shoot (num: number) {
